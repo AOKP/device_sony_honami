@@ -35,10 +35,6 @@ PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/init.device.rc:root/init.device.rc
 
-# Device specific part for two-stage boot
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/recovery/root/etc/bootrec-device:recovery/root/etc/bootrec-device
-
 # USB function switching
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/init.sony.usb.rc:root/init.sony.usb.rc
