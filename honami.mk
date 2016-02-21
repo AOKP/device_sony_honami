@@ -47,6 +47,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
    $(LOCAL_PATH)/thermanager.xml:system/etc/thermanager.xml
 
+# TWRP
+PRODUCT_COPY_FILES += \
+   $(LOCAL_PATH)/twrp.fstab:recovery/root/etc/twrp.fstab
+
 # call dalvik heap config
 $(call inherit-product, frameworks/native/build/phone-xxhdpi-2048-dalvik-heap.mk)
 
